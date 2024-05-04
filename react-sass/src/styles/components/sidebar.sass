@@ -25,5 +25,16 @@
         margin-top: 10rem
         padding: .8rem 1.2rem
 
+        &:hover 
+            cursor: default
+            color: #fff
+            background: variables.$gradient
+
     .btn
         @include mixins.btn
+
+    .download-button
+        transition: transform .5s
+
+        &:hover
+            transform: scale(1.1)

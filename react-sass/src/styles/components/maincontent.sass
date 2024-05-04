@@ -18,6 +18,9 @@
         @include mixins.center
         justify-content: start
         gap: 1rem
+    
+        &:hover
+            @include mixins.gradient-color
 
         &:after
             @include mixins.gradient-border
@@ -30,5 +33,7 @@
     .btn 
         @include mixins.btn
         align-self: start
-        
+        transition: transform .5s
 
+        &:hover
+            transform: scale(1.1)
