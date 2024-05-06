@@ -1,4 +1,4 @@
-import Avatar from '../img/bruno-oliveira.jpeg'
+import Avatar from '../img/bruno-oliveira.jpg'
 
 import '../styles/components/sidebar.sass'
 import SocialNetworks from './SocialNetworks'
@@ -8,7 +8,9 @@ import DownloadButton from './DownloadButton'
 const Sidebar = () => {
   return (
     <aside id="sidebar">
-      <img src={Avatar} alt="Bruno Oliveira" />
+      <div className='img-degrade'>
+        <img src={Avatar} alt="Bruno Oliveira" />
+      </div>
       <p className="title">Desenvolvedor</p>
       <SocialNetworks />
       <InformationContainer />
